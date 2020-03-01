@@ -11,6 +11,9 @@ import stat
 from distutils.core import setup
 from setuptools import setup, Extension
 
+os.environ["CC"] = "g++-9"
+os.environ["CXX"] = "g++-9"
+
 try:
     import py2exe
     use_py2exe = True
